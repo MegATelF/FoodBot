@@ -123,7 +123,7 @@ def create_order(message):
         bot.send_message(message.chat.id, f"Стоимость заказа: {calculate_cart_total(message.chat.id)}")
         bot.send_message(message.chat.id, "Доступна только оплата наличными курьеру")
         bot.send_message(message.chat.id, "Заказ принят в работу", reply_markup=button_menu())
-        calculate_cart_total(message.chat.id)
+        # calculate_cart_total(message.chat.id)
 
     
     elif message.content_type == 'location' or message.content_type == 'venue':
