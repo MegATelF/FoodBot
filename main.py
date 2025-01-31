@@ -27,7 +27,7 @@ ITEMS_PER_PAGE = 4
 
 @bot.message_handler(commands=["start"])
 def handle_start(message):
-    bot.send_message(message.chat.id, "Привет! Это твой третий бот! Перед тем как начать, используй команду /info", reply_markup=button_menu())
+    bot.send_message(message.chat.id, "Привет! Это твой третий бот! Перед тем как начать, используй команду /add_info", reply_markup=button_menu())
 
 @bot.message_handler(commands=["add_info"])
 def handle_info(message):
